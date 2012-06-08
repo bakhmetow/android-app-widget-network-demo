@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_widget_background"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="@string/txt_wifi" />
+
+        <Button
+            android:id="@+id/btnData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="@string/txt_data" />
+
+        <ImageButton
+            android:id="@+id/btnInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="42dip"
+            android:layout_margin="5dip"
+            android:src="@android:drawable/ic_menu_more" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/lyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/app_widget_info_background"
+        android:padding="@dimen/widget_margin"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/txtvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="Internet information"
+            android:textColor="@color/white"
+            android:textSize="12dip" />
+    </FrameLayout>
+
+</LinearLayout>
