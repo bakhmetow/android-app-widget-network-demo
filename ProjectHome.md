@@ -1,0 +1,1 @@
+app widget that access to network configuration such as Wifi and Data.
